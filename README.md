@@ -1,20 +1,19 @@
-# Memory Game Project
+## How to run this application
 
-## Table of Contents
+* * *
+* #### Cloning the repository
+    ```
+    $ git clone https://github.com/Shadowbrokerz/fend-project-memory-game.git
+    ```
+* #### Go to the online hosted version
+    https://shadowbrokerz.github.io/fend-project-memory-game/
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
 
-## Instructions
+## How to play
+* Click on a card and look for it's pair
+* If the card matches, it will stay green.
+* If it doesn't match it will go red, and be hidden again.
+* Find all the pairs, if you want to challenge yourself
+  do it in less than 9 moves to have a perfect score.
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
 
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).

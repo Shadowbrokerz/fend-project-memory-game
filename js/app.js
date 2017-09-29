@@ -143,7 +143,7 @@ function gameOver() {
         setTimeout(function () {
             $('.final-game').addClass('active');
         }, 1500);
-        $('.deck, .score-panel').addClass('finished');
+        $(' .board ,.deck, .score-panel').addClass('finished');
     }
 }
 

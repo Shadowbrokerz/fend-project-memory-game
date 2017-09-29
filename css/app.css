@@ -50,7 +50,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 3em;
+    margin: auto;
 }
 
 .active {
@@ -154,11 +154,16 @@ h1 {
 
 /* Media Queries */
 @media screen and (max-width:600px){
-    .container {
-        zoom:0.5;
+    .board {
+        zoom:0.54;
     }
 }
 
+@media screen and (max-width:320px){
+    .board {
+        zoom: 0.46;
+    }
+}
 
 /*  Animations  */
 @keyframes slideInFromLeft {

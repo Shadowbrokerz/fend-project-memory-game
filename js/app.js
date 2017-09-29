@@ -154,7 +154,7 @@ function newGame() {
     timer();
     $('.game-over').remove();
     $('.deck').children().remove();
-    $('.deck, .score-panel').removeClass('finished');
+    $('.board, .deck, .score-panel').removeClass('finished');
     $('.fa-star').css('color', 'gold');
     buildCards();
     enableClick();

@@ -87,9 +87,9 @@ function cardCheck(card, array) {
             enableClick();
         } else {
             //No match
-            for (item in array) {
+            array.forEach(function(){
                 $('.active').addClass('mismatch');
-            }
+            });
             setTimeout(function () {
                 for (item in array) {
                     $(`.${array[item]}`).parent().removeClass('open show mismatch active');

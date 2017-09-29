@@ -1,13 +1,13 @@
 const cardList = ['fa-diamond', 'fa-paper-plane-o', 'fa-anchor', 'fa-bolt', 'fa-cube', 'fa-leaf', 'fa-bicycle', 'fa-bomb'];
 const openCards = [];
 let moves = 0;
+let timerInterval;
 
 function timer() {
 ///////////////Timer///////////////////////////
     let minutes = `00`;
     let seconds = `00`;
-
-    let timerInterval = setInterval(function () {
+    timerInterval = setInterval(function () {
         let matchCounter = $('.match').length;
         if (matchCounter === 16) {
             clearInterval(timerInterval);
@@ -144,18 +144,17 @@ function gameOver() {
             $('.final-game').addClass('active');
         }, 1500);
         $('.deck, .score-panel').addClass('finished');
-        $('.restart').show();
     }
 }
 
 function newGame() {
     //Restart moves,timer,reset modals,stars,rebuild the cards.
     moves = 0;
+    clearInterval(timerInterval);
     timer();
     $('.game-over').remove();
     $('.deck').children().remove();
     $('.deck, .score-panel').removeClass('finished');
-    $('.restart').hide();
     $('.fa-star').css('color', 'gold');
     buildCards();
     enableClick();

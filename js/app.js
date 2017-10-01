@@ -152,6 +152,7 @@ function newGame() {
     moves = 0;
     clearInterval(timerInterval);
     timer();
+    //show cards for 1 second
     $('.game-over').remove();
     $('.deck').children().remove();
     $('.board, .deck, .score-panel').removeClass('finished');
@@ -160,6 +161,11 @@ function newGame() {
     enableClick();
     $('.moves').text(moves);
     $('.timer').text('00:00');
+    $('.card').addClass('show');
+
+    setTimeout(function(){
+        $('.card').removeClass('show');
+    },1200);
 }
 
 //Init

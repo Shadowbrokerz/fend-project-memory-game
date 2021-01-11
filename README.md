@@ -3,10 +3,10 @@
 * * *
 * #### Cloning the repository
     ```
-    $ git clone https://github.com/Shadowbrokerz/fend-project-memory-game.git
+    $ git clone https://github.com/acicco/fend-project-memory-game.git
     ```
 * #### Go to the online hosted version
-    https://shadowbrokerz.github.io/fend-project-memory-game/
+    https://acicco.github.io/fend-project-memory-game/
 
 
 ## How to play
